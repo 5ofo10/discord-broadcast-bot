@@ -28,8 +28,8 @@ const client = new Client({
 
 client.once("ready", () => {
   console.log("Bot is Ready!");
-  console.log("Code by Wick Studio");
-  console.log("discord.gg/wicks");
+  console.log("Code by  Studio");
+  console.log("discord.gg/im-esports");
 });
 
 client.on("messageCreate", async (message) => {
@@ -40,20 +40,20 @@ client.on("messageCreate", async (message) => {
 
   if (!member.roles.cache.has(allowedRoleId)) {
     return message.reply({
-      content: "ليس لديك صلاحية لاستخدام هذا الامر!",
+      content: "معكش رول ياقلبي",
       ephemeral: true,
     });
   }
 
   if (!message.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
     return message.reply({
-      content: "ليس لديك صلاحية لاستخدام هذا الامر!",
+      content: "معكش رول ياقلبي",
       ephemeral: true,
     });
   }
 
   const embed = new EmbedBuilder()
-    .setColor("#0099ff")
+    .setColor("#ff0000")
     .setTitle("لوحة تحكم البرودكاست")
     .setImage(config.image)
     .setDescription("الرجاء اختيار نوع الارسال للاعضاء.");
